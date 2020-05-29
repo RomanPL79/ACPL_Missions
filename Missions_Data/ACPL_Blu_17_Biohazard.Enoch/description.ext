@@ -1,0 +1,15 @@
+class CfgMusic
+{
+	tracks[]={};
+	
+	class Music1
+	{
+		name = "Music1";
+		sound[] = {"\sound\MGSStart.ogg",db+7, 1.0};
+	};
+	class Music2
+	{
+		name = "Music2";
+		sound[] = {"\sound\LOU.ogg",db+7, 1.0};
+	};
+};
