@@ -1,0 +1,25 @@
+
+author="KameX";
+loadScreen = "obrazek.jpg";
+
+allowFunctionsLog = 0;
+
+class CfgSounds
+{
+	sounds[] = {};
+	class ambientbg
+	{
+		name = "ambientbg";
+		sound[] = {"dzwieki\ambientbg.ogg", db +0, 1};
+		titles[] = {0,""};
+	};
+};
+
+class CfgFunctions 
+{
+	#include "vcom\cfgFunctions.hpp"
+};
+
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};

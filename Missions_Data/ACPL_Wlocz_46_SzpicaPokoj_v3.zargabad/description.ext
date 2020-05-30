@@ -1,0 +1,18 @@
+class CfgFunctions 
+{
+	class HLF
+	{
+		tag = "HLF";
+		class UnitCapture
+		{
+			file = "functions";
+			description = "Unit Capture Unit Play for Infantry.";
+
+			class infUnitCapture			{description = "Infantry unit capture, records movement, animation and (optional) firing";};
+			class infUnitCaptureAnim		{description = "Record unit animation (for infantry)";};
+			class infUnitCaptureFiring		{description = "Record unit firing (for infantry)";};
+			class infUnitPlayAnim			{description = "Plays unit animation (for infantry)";};
+			class infUnitPlayFiring			{description = "Plays unit firing (for infantry)";};
+		};
+	};
+};

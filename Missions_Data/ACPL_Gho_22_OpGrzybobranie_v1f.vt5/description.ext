@@ -1,0 +1,31 @@
+﻿class CfgFunctions 
+{
+	#include "vcom\cfgFunctions.hpp"
+};
+
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_CBASettings.sqf";
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Zadanie wykonane";
+		subtitle = "Udało wam się wyeliminować siły przeciwnika w strefie działań.";
+		description = "Udało wam się wyeliminować siły przeciwnika w strefie działań. Okoliczna ludność może spać spać spokojnie, nie obawiając się partyzantów.";
+		pictureBackground = "";
+		picture = "";
+	};
+	
+	
+	class loser
+	{
+		title = "Wszyscy zgnięli";
+		subtitle = "";
+		description = "Everyone is dead.";
+		pictureBackground = "";
+		picture = "KIA";
+		pictureColor[] = {0.6,0.1,0.2,1};
+	};
+};
